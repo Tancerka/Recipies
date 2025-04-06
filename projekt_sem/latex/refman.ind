@@ -1,0 +1,54 @@
+\begin{theindex}
+
+  \item {czytaj\_przepis}
+    \subitem {Przepis}, \hyperpage{9}
+
+  \indexspace
+
+  \item {dodaj\_krok}
+    \subitem {Przepis}, \hyperpage{10}
+  \item {dodaj\_skladnik}
+    \subitem {Przepis}, \hyperpage{10}
+  \item {Dodatki}, \hyperpage{7}
+    \subitem {Dodatki}, \hyperpage{8}
+    \subitem {pokaz}, \hyperpage{8}
+
+  \indexspace
+
+  \item {Krok}, \hyperpage{8}
+    \subitem {Krok}, \hyperpage{9}
+    \subitem {wykonanie\_kroku}, \hyperpage{9}
+
+  \indexspace
+
+  \item {pokaz}
+    \subitem {Dodatki}, \hyperpage{8}
+    \subitem {Przepis}, \hyperpage{10}
+    \subitem {Przyprawy}, \hyperpage{12}
+    \subitem {Skladnik}, \hyperpage{13}
+    \subitem {Skladniki\_glowne}, \hyperpage{14}
+  \item {Przepis}, \hyperpage{9}
+    \subitem {czytaj\_przepis}, \hyperpage{9}
+    \subitem {dodaj\_krok}, \hyperpage{10}
+    \subitem {dodaj\_skladnik}, \hyperpage{10}
+    \subitem {pokaz}, \hyperpage{10}
+  \item {przepis.h}, \hyperpage{17}
+  \item {Przyprawy}, \hyperpage{11}
+    \subitem {pokaz}, \hyperpage{12}
+    \subitem {Przyprawy}, \hyperpage{11}
+
+  \indexspace
+
+  \item {Skladnik}, \hyperpage{12}
+    \subitem {pokaz}, \hyperpage{13}
+    \subitem {Skladnik}, \hyperpage{13}
+  \item {Skladniki\_glowne}, \hyperpage{13}
+    \subitem {pokaz}, \hyperpage{14}
+    \subitem {Skladniki\_glowne}, \hyperpage{14}
+
+  \indexspace
+
+  \item {wykonanie\_kroku}
+    \subitem {Krok}, \hyperpage{9}
+
+\end{theindex}

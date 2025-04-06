@@ -1,0 +1,42 @@
+\hypertarget{przepis_8h_source}{}\doxysection{przepis.\+h}
+\mbox{\hyperlink{przepis_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*****************************************************************/}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}skladnik.h"{}}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_skladnik}{Skladnik}};}
+\DoxyCodeLine{00025\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_krok}{Krok}};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_przepis}{Przepis}}\ \{}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ std::string\ nazwa;}
+\DoxyCodeLine{00031\ \ \ \ \ std::vector<Skladnik*>\ skladniki;\ \ \ \textcolor{comment}{//wektor\ składników}}
+\DoxyCodeLine{00032\ \ \ \ \ std::vector<Krok*>\ kroki;\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//wektor\ przechowujący\ kroki}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_przepis_a5c66e9f42519e0df412f3f5f2bae406b}{czytaj\_przepis}}(std::ifstream\ \&sciezka\_pliku,\ \mbox{\hyperlink{class_przepis}{Przepis}}\&\ obiekt);\ \textcolor{comment}{//Pierwsza\ linia\ to\ nazwa\ przepisu,\ druga\ to\ "{}Składniki\ główne"{},\ czyta\ aż\ do\ natrafienia\ "{}Przyprawy"{},\ a\ potem\ robi\ to\ samo,\ aż\ natrafi\ na\ "{}dodatki,\ potem\ czyta\ składniki\ aż\ do\ znalezienia\ słowa\ "{}Kroki:"{},\ kończy\ na\ znalezieniu\ "{}*"{}}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_przepis_aa2c41da4009942f9888819a2a8820e39}{dodaj\_skladnik}}(\mbox{\hyperlink{class_skladnik}{Skladnik}}*\ s)\ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ skladniki.push\_back(s);}
+\DoxyCodeLine{00047\ \ \ \ \ \}}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_przepis_af4ce77ca12a3e9ab97bf4deffa7140a0}{dodaj\_krok}}(\mbox{\hyperlink{class_krok}{Krok}}*\ k)\ \{}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ kroki.push\_back(k);}
+\DoxyCodeLine{00054\ \ \ \ \ \}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_przepis_aaed1d9986ea2763dde170dac268a4193}{pokaz}}(\mbox{\hyperlink{class_przepis}{Przepis}}\&\ obiekt);\ \ \ \ \textcolor{comment}{//pokazuje\ całość\ przepisu\ }}
+\DoxyCodeLine{00060\ \};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ }
+
+\end{DoxyCode}

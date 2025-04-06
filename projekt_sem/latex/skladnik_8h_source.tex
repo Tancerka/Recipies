@@ -1,0 +1,69 @@
+\hypertarget{skladnik_8h_source}{}\doxysection{skladnik.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{przepis_8h}{przepis.h}}"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_skladnik}{Skladnik}}\ \{}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00015\ \ \ \ \ std::string\ nazwa;}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_skladnik_a02a3a413e173dd1d3244eb6f241247aa}{Skladnik}}(std::string\ n)\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ nazwa\ =\ n;}
+\DoxyCodeLine{00023\ \ \ \ \ \}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_skladnik_ae3a2767cebf0500718402b0a1ef5f5cf}{pokaz}}()\ =\ 0;}
+\DoxyCodeLine{00028\ \};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_przyprawy}{Przyprawy}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_skladnik}{Skladnik}}\ \{}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_przyprawy_a22bf69f064435b6b632c2f45fc25928e}{Przyprawy}}(std::string\ n)\ :\ \mbox{\hyperlink{class_skladnik}{Skladnik}}(n)\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \}}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_przyprawy_a31e47e03860c9ae831a5d144e7f1628a}{pokaz}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}-\/\ przyprawa:\ \ "{}}\ <<\ nazwa\ <<\ std::endl;}
+\DoxyCodeLine{00046\ \ \ \ \ \}}
+\DoxyCodeLine{00047\ \};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00052\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_skladniki__glowne}{Skladniki\_glowne}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_skladnik}{Skladnik}}\ \{}
+\DoxyCodeLine{00053\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00058\ \ \ \ \ \mbox{\hyperlink{class_skladniki__glowne_ace93884fa28b60392e2a24afba6a4a22}{Skladniki\_glowne}}(std::string\ n)\ :\ \mbox{\hyperlink{class_skladnik}{Skladnik}}(n)\ \{}
+\DoxyCodeLine{00059\ \ \ \ \ \}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_skladniki__glowne_a0e0ff498ee2b79a6c8e7bd4a7a01cbbc}{pokaz}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}-\/\ składnik\ główny:\ "{}}\ <<\ nazwa\ <<\ std::endl;}
+\DoxyCodeLine{00065\ \ \ \ \ \}}
+\DoxyCodeLine{00066\ \};}
+\DoxyCodeLine{00070\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_dodatki}{Dodatki}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_skladnik}{Skladnik}}\ \{}
+\DoxyCodeLine{00071\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00076\ \ \ \ \ \mbox{\hyperlink{class_dodatki_a77c26602d1f9de2e0075518ba27f82c1}{Dodatki}}(std::string\ n)\ :\ \mbox{\hyperlink{class_skladnik}{Skladnik}}(n)\ \{}
+\DoxyCodeLine{00077\ \ \ \ \ \}}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_dodatki_a9389fd7f6314c97b450200ecc5950a51}{pokaz}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}-\/\ dodatek:\ "{}}\ <<\ nazwa\ <<\ std::endl;}
+\DoxyCodeLine{00083\ \ \ \ \ \}}
+\DoxyCodeLine{00084\ \};}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00089\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_krok}{Krok}}\ \{}
+\DoxyCodeLine{00090\ \ \ \ \ std::string\ kroki;}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_krok_a0d8a0fc76565d8d1a0f113ef3c033859}{wykonanie\_kroku}}();}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00102\ \ \ \ \ \mbox{\hyperlink{class_krok_a2a63d550f5eab011a137cff13a1bac2a}{Krok}}(std::string\ k)\ :\ kroki(k)\ \{}
+\DoxyCodeLine{00103\ \ \ \ \ \}}
+\DoxyCodeLine{00104\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Zarządzanie przepisami: Plik źródłowy skladnik.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Zarządzanie przepisami
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">skladnik.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="przepis_8h.html">przepis.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_skladnik.html">   12</a></span><span class="keyword">class </span><a class="code hl_class" href="class_skladnik.html">Skladnik</a> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    std::string nazwa;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_skladnik.html#a02a3a413e173dd1d3244eb6f241247aa">   21</a></span>    <a class="code hl_function" href="class_skladnik.html#a02a3a413e173dd1d3244eb6f241247aa">Skladnik</a>(std::string n) {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        nazwa = n;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    }</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_skladnik.html#ae3a2767cebf0500718402b0a1ef5f5cf">   27</a></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_skladnik.html#ae3a2767cebf0500718402b0a1ef5f5cf">pokaz</a>() = 0;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_przyprawy.html">   32</a></span><span class="keyword">class </span><a class="code hl_class" href="class_przyprawy.html">Przyprawy</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_skladnik.html">Skladnik</a> {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_przyprawy.html#a22bf69f064435b6b632c2f45fc25928e">   39</a></span>    <a class="code hl_function" href="class_przyprawy.html#a22bf69f064435b6b632c2f45fc25928e">Przyprawy</a>(std::string n) : <a class="code hl_class" href="class_skladnik.html">Skladnik</a>(n) {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_przyprawy.html#a31e47e03860c9ae831a5d144e7f1628a">   44</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_przyprawy.html#a31e47e03860c9ae831a5d144e7f1628a">pokaz</a>()<span class="keyword"> override </span>{</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;- przyprawa:  &quot;</span> &lt;&lt; nazwa &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>};</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="class_skladniki__glowne.html">   52</a></span><span class="keyword">class </span><a class="code hl_class" href="class_skladniki__glowne.html">Skladniki_glowne</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_skladnik.html">Skladnik</a> {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_skladniki__glowne.html#ace93884fa28b60392e2a24afba6a4a22">   58</a></span>    <a class="code hl_function" href="class_skladniki__glowne.html#ace93884fa28b60392e2a24afba6a4a22">Skladniki_glowne</a>(std::string n) : <a class="code hl_class" href="class_skladnik.html">Skladnik</a>(n) {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="class_skladniki__glowne.html#a0e0ff498ee2b79a6c8e7bd4a7a01cbbc">   63</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_skladniki__glowne.html#a0e0ff498ee2b79a6c8e7bd4a7a01cbbc">pokaz</a>()<span class="keyword"> override </span>{</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;- składnik główny: &quot;</span> &lt;&lt; nazwa &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>};</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="class_dodatki.html">   70</a></span><span class="keyword">class </span><a class="code hl_class" href="class_dodatki.html">Dodatki</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_skladnik.html">Skladnik</a> {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="class_dodatki.html#a77c26602d1f9de2e0075518ba27f82c1">   76</a></span>    <a class="code hl_function" href="class_dodatki.html#a77c26602d1f9de2e0075518ba27f82c1">Dodatki</a>(std::string n) : <a class="code hl_class" href="class_skladnik.html">Skladnik</a>(n) {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="class_dodatki.html#a9389fd7f6314c97b450200ecc5950a51">   81</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_dodatki.html#a9389fd7f6314c97b450200ecc5950a51">pokaz</a>()<span class="keyword"> override </span>{</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;- dodatek: &quot;</span> &lt;&lt; nazwa &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    }</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>};</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="class_krok.html">   89</a></span><span class="keyword">class </span><a class="code hl_class" href="class_krok.html">Krok</a> {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    std::string kroki;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_krok.html#a0d8a0fc76565d8d1a0f113ef3c033859">wykonanie_kroku</a>();</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="class_krok.html#a2a63d550f5eab011a137cff13a1bac2a">  102</a></span>    <a class="code hl_function" href="class_krok.html#a2a63d550f5eab011a137cff13a1bac2a">Krok</a>(std::string k) : kroki(k) {</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>};</div>
+<div class="ttc" id="aclass_dodatki_html"><div class="ttname"><a href="class_dodatki.html">Dodatki</a></div><div class="ttdef"><b>Definition:</b> skladnik.h:70</div></div>
+<div class="ttc" id="aclass_dodatki_html_a77c26602d1f9de2e0075518ba27f82c1"><div class="ttname"><a href="class_dodatki.html#a77c26602d1f9de2e0075518ba27f82c1">Dodatki::Dodatki</a></div><div class="ttdeci">Dodatki(std::string n)</div><div class="ttdef"><b>Definition:</b> skladnik.h:76</div></div>
+<div class="ttc" id="aclass_dodatki_html_a9389fd7f6314c97b450200ecc5950a51"><div class="ttname"><a href="class_dodatki.html#a9389fd7f6314c97b450200ecc5950a51">Dodatki::pokaz</a></div><div class="ttdeci">void pokaz() override</div><div class="ttdef"><b>Definition:</b> skladnik.h:81</div></div>
+<div class="ttc" id="aclass_krok_html"><div class="ttname"><a href="class_krok.html">Krok</a></div><div class="ttdef"><b>Definition:</b> skladnik.h:89</div></div>
+<div class="ttc" id="aclass_krok_html_a0d8a0fc76565d8d1a0f113ef3c033859"><div class="ttname"><a href="class_krok.html#a0d8a0fc76565d8d1a0f113ef3c033859">Krok::wykonanie_kroku</a></div><div class="ttdeci">void wykonanie_kroku()</div><div class="ttdef"><b>Definition:</b> skladnik.cpp:4</div></div>
+<div class="ttc" id="aclass_krok_html_a2a63d550f5eab011a137cff13a1bac2a"><div class="ttname"><a href="class_krok.html#a2a63d550f5eab011a137cff13a1bac2a">Krok::Krok</a></div><div class="ttdeci">Krok(std::string k)</div><div class="ttdef"><b>Definition:</b> skladnik.h:102</div></div>
+<div class="ttc" id="aclass_przyprawy_html"><div class="ttname"><a href="class_przyprawy.html">Przyprawy</a></div><div class="ttdef"><b>Definition:</b> skladnik.h:32</div></div>
+<div class="ttc" id="aclass_przyprawy_html_a22bf69f064435b6b632c2f45fc25928e"><div class="ttname"><a href="class_przyprawy.html#a22bf69f064435b6b632c2f45fc25928e">Przyprawy::Przyprawy</a></div><div class="ttdeci">Przyprawy(std::string n)</div><div class="ttdef"><b>Definition:</b> skladnik.h:39</div></div>
+<div class="ttc" id="aclass_przyprawy_html_a31e47e03860c9ae831a5d144e7f1628a"><div class="ttname"><a href="class_przyprawy.html#a31e47e03860c9ae831a5d144e7f1628a">Przyprawy::pokaz</a></div><div class="ttdeci">void pokaz() override</div><div class="ttdef"><b>Definition:</b> skladnik.h:44</div></div>
+<div class="ttc" id="aclass_skladnik_html"><div class="ttname"><a href="class_skladnik.html">Skladnik</a></div><div class="ttdef"><b>Definition:</b> skladnik.h:12</div></div>
+<div class="ttc" id="aclass_skladnik_html_a02a3a413e173dd1d3244eb6f241247aa"><div class="ttname"><a href="class_skladnik.html#a02a3a413e173dd1d3244eb6f241247aa">Skladnik::Skladnik</a></div><div class="ttdeci">Skladnik(std::string n)</div><div class="ttdef"><b>Definition:</b> skladnik.h:21</div></div>
+<div class="ttc" id="aclass_skladnik_html_ae3a2767cebf0500718402b0a1ef5f5cf"><div class="ttname"><a href="class_skladnik.html#ae3a2767cebf0500718402b0a1ef5f5cf">Skladnik::pokaz</a></div><div class="ttdeci">virtual void pokaz()=0</div></div>
+<div class="ttc" id="aclass_skladniki__glowne_html"><div class="ttname"><a href="class_skladniki__glowne.html">Skladniki_glowne</a></div><div class="ttdef"><b>Definition:</b> skladnik.h:52</div></div>
+<div class="ttc" id="aclass_skladniki__glowne_html_a0e0ff498ee2b79a6c8e7bd4a7a01cbbc"><div class="ttname"><a href="class_skladniki__glowne.html#a0e0ff498ee2b79a6c8e7bd4a7a01cbbc">Skladniki_glowne::pokaz</a></div><div class="ttdeci">void pokaz() override</div><div class="ttdef"><b>Definition:</b> skladnik.h:63</div></div>
+<div class="ttc" id="aclass_skladniki__glowne_html_ace93884fa28b60392e2a24afba6a4a22"><div class="ttname"><a href="class_skladniki__glowne.html#ace93884fa28b60392e2a24afba6a4a22">Skladniki_glowne::Skladniki_glowne</a></div><div class="ttdeci">Skladniki_glowne(std::string n)</div><div class="ttdef"><b>Definition:</b> skladnik.h:58</div></div>
+<div class="ttc" id="aprzepis_8h_html"><div class="ttname"><a href="przepis_8h.html">przepis.h</a></div><div class="ttdoc">plik zawiera definicje klasy przepis</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>
